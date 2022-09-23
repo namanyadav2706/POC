@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>POC Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="1" placeholder="1" required="required" /><br>
+    	<input type="text" name="2" placeholder="2" required="required" /><br>
+        <input type="text" name="3" placeholder="3" required="required" /><br>
+        <input type="text" name="4" placeholder="4" required="required" /><br>
+        <input type="text" name="5" placeholder="5" required="required" /><br>
+        <input type="text" name="6" placeholder="6" required="required" /><br>
+        <input type="text" name="7" placeholder="7" required="required" /><br>
+        <input type="text" name="8" placeholder="8" required="required" /><br>
+        <input type="text" name="9" placeholder="9" required="required" /><br>
+        <input type="text" name="10" placeholder="10" required="required" /><br>
+        <input type="text" name="11" placeholder="11" required="required" /><br>
+        <input type="text" name="12" placeholder="12" required="required" /><br>
+        <input type="text" name="13" placeholder="13" required="required" /><br>
+        <input type="text" name="14" placeholder="14" required="required" /><br>
+        <input type="text" name="15" placeholder="15" required="required" /><br>
+        <input type="text" name="16" placeholder="16" required="required" /><br>
+        <input type="text" name="17" placeholder="17" required="required" /><br>
+        <input type="text" name="18" placeholder="18" required="required" /><br>
+        <input type="text" name="19" placeholder="19" required="required" /><br>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
